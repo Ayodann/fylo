@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: hsl(217, 28%, 15%);
+  font-family: "Open Sans", sans-serif;
+}
+header,
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+main {
+  background-color: hsl(218, 28%, 13%);
+  position: relative;
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar ul a {
+  color: white;
+  justify-content: space-between;
+}
+
+.navbar ul a:hover {
+  text-decoration: underline;
+}
+
+.homeimg {
+  text-align: center;
+  max-width: 600px;
+  margin-inline: auto;
+  position: relative;
+}
+.container {
+  position: relative;
+}
+.container .img img {
+  position: absolute;
+  left: 0;
+  bottom: -3rem;
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+  z-index: -1;
+}
+#homeimg {
+  max-width: 100%;
+  height: auto;
+}
+.text {
+  text-align: center;
+  margin: 30px;
+}
+p {
+  margin-block: 20px;
+}
+h1 {
+  font-size: x-large;
+}
+
+a button {
+  background-image: linear-gradient(
+    to right,
+    hsl(176, 68%, 64%) 5%,
+    hsl(198, 60%, 50%)
+  );
+  color: white;
+  border: 0;
+  border-radius: 70px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+}
+
+a button:hover {
+  background-image: linear-gradient(hsl(176, 68%, 64%));
+}
+
+.properties {
+  text-align: center;
+  margin-block: 50px;
+  margin-inline: 2rem;
+}
+
+.each {
+  margin-block: 50px;
+}
+.pro {
+  text-align: center;
+}
+
+#productive {
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-inline: auto;
+}
+.productive h2 {
+  margin-top: 50px;
+}
+.productive a {
+  color: hsl(176, 68%, 64%);
+}
+a img {
+  vertical-align: middle;
+}
+
+.testimonies {
+  padding-inline: 1.5rem;
+  margin-top: 50px;
+}
+.testimonies img {
+  width: auto;
+  height: 30px;
+  margin: 0;
+}
+.testimony {
+  background-color: hsl(219, 30%, 18%);
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: -4px;
+}
+.info {
+  display: flex;
+}
+.info img {
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.info p {
+  margin-top: 5px;
+  font-size: small;
+}
+.mail {
+  background-color: hsl(217, 28%, 15%);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  top: 7rem;
+}
+input {
+  height: 40px;
+  width: 270px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: white;
+  border: none;
+  margin-bottom: 20px;
+  outline: none;
+}
+input:active {
+  border: none;
+}
+form button {
+  height: 40px;
+  width: 270px;
+  border-radius: 30px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(176, 68%, 64%) 1px,
+    hsl(198, 60%, 50%)
+  );
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background-image: linear-gradient(hsl(176, 68%, 64%));
+}
+footer {
+  background-color: hsl(216, 53%, 9%);
+  padding-top: 10rem;
+  padding-inline: 2rem;
+  padding-bottom: 3rem;
+}
+.foot {
+  display: flex;
+  margin-top: 20px;
+}
+.foot p {
+  margin: 0;
+  margin-left: 20px;
+  font-size: small;
+}
+.us {
+  margin-top: 30px;
+}
+.us p {
+  margin-block: 5px;
+}
+.location img {
+  width: 10px;
+  height: 20px;
+}
+.location p {
+  width: 300px;
+}
+.face img {
+  width: 50px;
+  height: 50px;
+}
+.app a {
+  border: white;
+}
+i {
+  color: white;
+  margin: 5px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50%;
+}
+i.fa-brands.fa-facebook-fa::before {
+  height: 16px;
+}
+.app a :hover {
+  color: hsl(176, 68%, 64%);
+  border: 2px solid hsl(176, 68%, 64%);
+}
+@media (min-width: 761px) {
+  .header {
+    max-width: 1100px;
+    margin: 0;
+    margin-inline: auto;
+    padding: 0;
+  }
+  .properties {
+    margin: 60px;
+  }
+  .first {
+    display: flex;
+    justify-content: center;
+    margin-block: 30px;
+    gap: 40px;
+  }
+  .second {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .productive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 70px; */
+  }
+  .productivetext {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 550px;
+  }
+  .testimonie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimony {
+    margin-right: 15px;
+  }
+  .mail {
+    width: 700px;
+    margin-inline: auto;
+  }
+  input {
+    width: 320px;
+  }
+  form button {
+    width: 180px;
+  }
+  footer {
+    padding-inline: 0;
+    justify-content: center;
+  }
+  .foota {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container .img img {
+    content: url("./bg-curvy-desktop.svg");
+    width: 100%;
+    height: 15rem;
+  }
+}
